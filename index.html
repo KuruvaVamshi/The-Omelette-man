@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Omelette Man - Franchise Opportunity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="The Omelette Man Logo" class="brand-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Franchise Opportunity</a></li>
+                <li><a href="#experience">The TOM Experience</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="btn btn-primary" onclick="openModal()"><i data-lucide="phone"></i> Talk To Franchise Team</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg-image"></div>
+        <div class="hero-content">
+            <div class="hero-text animate-on-scroll fade-in-up">
+                <div class="badge"><i data-lucide="crown"></i> INDIA'S FIRST & BIGGEST OMELETTE FRANCHISE</div>
+                <h1>Own India's<br><span class="highlight">Next Big</span><br>Omelette Brand</h1>
+                <p class="subtitle">Low Investment. <span class="highlight">High</span> Margins.<br>Fast Operations. <span class="highlight">Scalable</span> Franchise Model.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary lg" onclick="openModal()"><i data-lucide="flame"></i> Apply For Franchise</button>
+                    <button class="btn btn-outline lg"><i data-lucide="phone"></i> Talk To Franchise Team</button>
+                </div>
+                <div class="social-proof">
+                    <div class="avatars">
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar-count">500+</div>
+                    </div>
+                    <p>Entrepreneurs are already building<br>their TOM Empire!</p>
+                </div>
+            </div>
+            <div class="hero-image animate-on-scroll fade-in-left">
+                <div class="cinematic-glow"></div>
+                <!-- Looping Smoke Overlay -->
+                <div class="smoke-loop-container">
+                    <div class="smoke-scroll-fast">
+                        <img src="assets/smoke.png" alt="" class="smoke-layer loop-1">
+                        <img src="assets/smoke.png" alt="" class="smoke-layer loop-2">
+                    </div>
+                    <div class="smoke-scroll-slow">
+                        <img src="assets/smoke.png" alt="" class="smoke-layer loop-1">
+                        <img src="assets/smoke.png" alt="" class="smoke-layer loop-2">
+                    </div>
+                </div>
+                
+                <img src="assets/monster_omelette.png" alt="Monster Omelette" class="floating-dish">
+                <div class="dish-label">
+                    <span class="label-title">The King</span>
+                    <span class="label-subtitle">of Omelettes</span>
+                </div>
+            </div>
+        </div>
+        <div class="torn-paper-bottom"></div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar-wrapper">
+        <div class="stats-bar">
+            <div class="stat-item animate-on-scroll fade-in-up" style="--delay: 0.1s">
+                <div class="stat-icon"><i data-lucide="indian-rupee"></i></div>
+                <div class="stat-text">
+                    <h3>₹3 - 7 Lakh</h3>
+                    <p>Investment</p>
+                    <span>Affordable & High Return</span>
+                </div>
+            </div>
+            <div class="stat-item animate-on-scroll fade-in-up" style="--delay: 0.2s">
+                <div class="stat-icon"><i data-lucide="trending-up"></i></div>
+                <div class="stat-text">
+                    <h3>55% - 72%</h3>
+                    <p>Margins</p>
+                    <span>High Profit Potential</span>
+                </div>
+            </div>
+            <div class="stat-item animate-on-scroll fade-in-up" style="--delay: 0.3s">
+                <div class="stat-icon"><i data-lucide="store"></i></div>
+                <div class="stat-text">
+                    <h3>100 - 200</h3>
+                    <p>Sq Ft</p>
+                    <span>Small Space. Big Business</span>
+                </div>
+            </div>
+            <div class="stat-item animate-on-scroll fade-in-up" style="--delay: 0.4s">
+                <div class="stat-icon"><i data-lucide="users"></i></div>
+                <div class="stat-text">
+                    <h3>1 - 2</h3>
+                    <p>Staff Model</p>
+                    <span>Easy to Hire & Manage</span>
+                </div>
+            </div>
+            <div class="stat-item animate-on-scroll fade-in-up" style="--delay: 0.5s">
+                <div class="stat-icon"><i data-lucide="rocket"></i></div>
+                <div class="stat-text">
+                    <h3>Fast Growing</h3>
+                    <p>Segment</p>
+                    <span>Massive Demand. Huge Future</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (From PDF) -->
+    <section class="about-section light-bg mt-5" id="about">
+        <div class="container">
+            <div class="grid-2 align-items-center">
+                <div class="about-text">
+                    <h2>WELCOME TO THE <span class="highlight">FAMILY</span></h2>
+                    <p class="text-large mt-4">We take the taste of India's favorite street-side omelette and serve it with the quality, cleanliness and consistency of a modern food chain. But more than that, we build success stories.</p>
+                    <div class="quote-box mt-4 animate-on-scroll zoom-in">
+                        <h3 class="highlight">"Join India's most consistent, hygienic and affordable egg-based QSR brand."</h3>
+                    </div>
+                </div>
+                <div class="about-image animate-on-scroll fade-in-right">
+                    <img src="assets/happy_franchise_owner.png" alt="Happy Franchise Owner" class="rounded-image shadow-lg" style="width: 100%; border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Partner & Why Eggs (From PDF) -->
+    <section class="partner-eggs container mt-5">
+        <div class="grid-2">
+            <div class="pdf-box animate-on-scroll fade-in-up">
+                <h3 class="section-divider"><span>WHY PARTNER WITH US?</span></h3>
+                <ul class="check-list mt-4">
+                    <li><i data-lucide="check-circle-2"></i> Low investment, high return business model</li>
+                    <li><i data-lucide="check-circle-2"></i> High-margin menu with fast cooking items</li>
+                    <li><i data-lucide="check-circle-2"></i> Standardized SOPs – Easy to learn & operate</li>
+                    <li><i data-lucide="check-circle-2"></i> Strong brand identity & customer loyalty</li>
+                    <li><i data-lucide="check-circle-2"></i> Complete training, branding & operational support</li>
+                    <li><i data-lucide="check-circle-2"></i> Proven system designed for rapid expansion</li>
+                </ul>
+            </div>
+            <div class="pdf-box animate-on-scroll fade-in-up" style="--delay: 0.2s">
+                <h3 class="section-divider"><span>WHY EGGS? WHY THIS BUSINESS?</span></h3>
+                <ul class="check-list mt-4">
+                    <li><i data-lucide="check-circle-2"></i> Low cost, high protein food</li>
+                    <li><i data-lucide="check-circle-2"></i> Affordable & loved by all age groups</li>
+                    <li><i data-lucide="check-circle-2"></i> Fast cooking – high customer throughput</li>
+                    <li><i data-lucide="check-circle-2"></i> Simple operations – 1 cook can run the outlet</li>
+                    <li><i data-lucide="check-circle-2"></i> 365 days demand – breakfast to dinner</li>
+                </ul>
+                <div class="egg-equation mt-4">
+                    <p><strong>LOW COST EGG + FAST COOKING + HAPPY CUSTOMERS + STRONG FRANCHISE NETWORK = PROFITABLE & SCALABLE BUSINESS</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franchise Model & Profit Potential (From PDF) -->
+    <section class="financials light-bg mt-5">
+        <div class="container">
+            <div class="grid-2">
+                <div class="pdf-box white-bg animate-on-scroll fade-in-left">
+                    <h3 class="section-divider"><span>OUR FRANCHISE MODEL</span></h3>
+                    <div class="model-grid mt-4">
+                        <div class="m-item">
+                            <i data-lucide="store"></i>
+                            <h4>ONE TIME FRANCHISE FEE</h4>
+                            <p class="highlight text-large">₹5,00,000</p>
+                        </div>
+                        <div class="m-item">
+                            <i data-lucide="percent"></i>
+                            <h4>ROYALTY</h4>
+                            <p>4% - 8% OF SALES</p>
+                        </div>
+                        <div class="m-item">
+                            <i data-lucide="megaphone"></i>
+                            <h4>MARKETING FUND</h4>
+                            <p>1% - 2% OF SALES</p>
+                        </div>
+                        <div class="m-item">
+                            <i data-lucide="truck"></i>
+                            <h4>SUPPLY CHAIN (OPTIONAL)</h4>
+                            <p>ADDITIONAL MARGIN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pdf-box dark-bg animate-on-scroll fade-in-right">
+                    <h3 class="highlight mb-4">YOUR EARNING POTENTIAL</h3>
+                    <p class="mb-4">Use the slider below to estimate your monthly returns.</p>
+                    
+                    <div class="roi-calculator">
+                        <div class="slider-container">
+                            <label for="salesSlider">Daily Sales Estimate: <span id="salesValue" class="highlight">₹15,000</span></label>
+                            <input type="range" id="salesSlider" min="5000" max="30000" step="1000" value="15000" class="custom-slider">
+                        </div>
+                        
+                        <div class="calc-results mt-4">
+                            <div class="calc-box">
+                                <span>Monthly Revenue</span>
+                                <h4 id="calcMonthly">₹4,50,000</h4>
+                            </div>
+                            <div class="calc-box highlight-box">
+                                <span>Estimated Net Profit</span>
+                                <h3 id="calcProfit">₹1,35,000</h3>
+                            </div>
+                        </div>
+                        <p class="small-text mt-3">*Calculations based on average 60% gross margin and standard operating expenses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What you get & Requirements (From PDF) -->
+    <section class="requirements container mt-5">
+        <div class="grid-3">
+            <div class="pdf-box animate-on-scroll fade-in-up">
+                <h3 class="section-divider"><span>WHAT YOU GET</span></h3>
+                <ul class="icon-list mt-4">
+                    <li><i data-lucide="chef-hat"></i> Complete Kitchen Equipment</li>
+                    <li><i data-lucide="book"></i> Full Training & SOP Manual</li>
+                    <li><i data-lucide="palette"></i> Branding & Store Design</li>
+                    <li><i data-lucide="package"></i> Menu & Packaging System</li>
+                    <li><i data-lucide="rocket"></i> Launch & Marketing Support</li>
+                    <li><i data-lucide="headset"></i> Ongoing Operational Support</li>
+                </ul>
+            </div>
+            <div class="pdf-box animate-on-scroll fade-in-up" style="--delay: 0.1s">
+                <h3 class="section-divider"><span>WE HOLD YOUR HAND EVERY STEP</span></h3>
+                <ul class="icon-list mt-4">
+                    <li><i data-lucide="calendar"></i> 5 - 7 Days Training Program</li>
+                    <li><i data-lucide="file-text"></i> Complete SOP & Recipe Manual</li>
+                    <li><i data-lucide="truck"></i> Vendor & Supply Chain Support</li>
+                    <li><i data-lucide="box"></i> Standardized Branding & Packaging</li>
+                    <li><i data-lucide="megaphone"></i> Marketing & Launch Assistance</li>
+                    <li><i data-lucide="compass"></i> Ongoing Operational Guidance</li>
+                </ul>
+            </div>
+            <div class="pdf-box animate-on-scroll fade-in-up" style="--delay: 0.2s">
+                <h3 class="section-divider"><span>WHAT YOU NEED TO START</span></h3>
+                <div class="req-table mt-4">
+                    <div class="req-row"><span>Space Required</span> <strong>100 - 200 Sq. Ft.</strong></div>
+                    <div class="req-row"><span>Setup Format</span> <strong>Takeaway / Quick Service</strong></div>
+                    <div class="req-row"><span>Team Required</span> <strong>1 Cook + 1 Helper</strong></div>
+                    <div class="req-row"><span>Estimated Payback</span> <strong>3 - 8 Months</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose TOM -->
+    <section class="why-choose light-bg" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>WHY TOM IS A <span class="highlight">GOLDMINE</span></h2>
+                <p>A Business Model That Works. <span class="highlight">Every Day.</span></p>
+            </div>
+            
+            <div class="grid-6 mt-4">
+                <div class="info-card animate-on-scroll fade-in-up">
+                    <div class="icon-circle"><i data-lucide="egg"></i></div>
+                    <h4>INDIA'S MOST AFFORDABLE PROTEIN</h4>
+                    <p>Eggs are the most affordable protein source for every Indian. High demand. Always.</p>
+                </div>
+                <div class="info-card animate-on-scroll fade-in-up" style="--delay: 0.1s">
+                    <div class="icon-circle"><i data-lucide="zap"></i></div>
+                    <h4>FAST SERVICE MODEL</h4>
+                    <p>Designed for speed. Quick preparation. Fast turnaround. Happy customers.</p>
+                </div>
+                <div class="info-card animate-on-scroll fade-in-up" style="--delay: 0.2s">
+                    <div class="icon-circle"><i data-lucide="indian-rupee"></i></div>
+                    <h4>HIGH MARGIN BUSINESS</h4>
+                    <p>Low food cost. High selling price. Healthy margins from day one.</p>
+                </div>
+                <div class="info-card animate-on-scroll fade-in-up" style="--delay: 0.3s">
+                    <div class="icon-circle"><i data-lucide="settings"></i></div>
+                    <h4>STANDARDIZED OPERATIONS</h4>
+                    <p>Simple recipes. Easy to train. Same taste. Every time.</p>
+                </div>
+                <div class="info-card animate-on-scroll fade-in-up" style="--delay: 0.4s">
+                    <div class="icon-circle"><i data-lucide="trending-up"></i></div>
+                    <h4>MASSIVE EXPANSION POTENTIAL</h4>
+                    <p>Small space model. Low investment. High scalability across India.</p>
+                </div>
+                <div class="info-card animate-on-scroll fade-in-up" style="--delay: 0.5s">
+                    <div class="icon-circle"><i data-lucide="handshake"></i></div>
+                    <h4>COMPLETE FRANCHISE SUPPORT</h4>
+                    <p>From startup to scale, we're with you. Operations, training, marketing & more.</p>
+                </div>
+            </div>
+
+            <div class="market-opportunity mt-5 animate-on-scroll zoom-in">
+                <div class="market-header">
+                    <h2>THE BIG <span class="highlight">MARKET</span> OPPORTUNITY</h2>
+                    <div class="market-tag">INDIA NEEDS ALL FOUR. TOM DELIVERS ALL FOUR.</div>
+                </div>
+                <div class="market-items">
+                    <div class="market-item">
+                        <div class="icon-circle small"><i data-lucide="dumbbell"></i></div>
+                        <h4>PROTEIN</h4>
+                        <p>India is becoming health conscious. Protein demand is rising fast.</p>
+                    </div>
+                    <div class="market-item">
+                        <div class="icon-circle small"><i data-lucide="zap"></i></div>
+                        <h4>FAST FOOD</h4>
+                        <p>People want quick, tasty and filling meals. Fast food is the future.</p>
+                    </div>
+                    <div class="market-center">
+                        <img src="assets/chef_mascot.png" alt="Tom Mascot">
+                        <h4>TOM DELIVERS ALL FOUR</h4>
+                    </div>
+                    <div class="market-item">
+                        <div class="icon-circle small"><i data-lucide="indian-rupee"></i></div>
+                        <h4>AFFORDABLE FOOD</h4>
+                        <p>Indians want great taste at an affordable price. Value always wins.</p>
+                    </div>
+                    <div class="market-item">
+                        <div class="icon-circle small"><i data-lucide="shield-check"></i></div>
+                        <h4>HYGIENE</h4>
+                        <p>Clean, safe and hygienic food is no longer optional. It's expected.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why This Model Scales -->
+    <section class="model-scales container mt-5">
+        <div class="section-header">
+            <h2>WHY THIS MODEL <span class="highlight lg-text">SCALES</span></h2>
+            <p>One powerful system. <span class="highlight">Unlimited possibilities.</span></p>
+        </div>
+        <div class="scale-features grid-4 mt-4">
+            <div class="scale-feature animate-on-scroll fade-in-up">
+                <i data-lucide="book-open"></i>
+                <h4>STANDARD RECIPES</h4>
+                <p>Consistent taste every single time</p>
+            </div>
+            <div class="scale-feature animate-on-scroll fade-in-up" style="--delay: 0.1s">
+                <i data-lucide="graduation-cap"></i>
+                <h4>EASY TRAINING</h4>
+                <p>Anyone can learn. Anyone can run.</p>
+            </div>
+            <div class="scale-feature animate-on-scroll fade-in-up" style="--delay: 0.2s">
+                <i data-lucide="settings"></i>
+                <h4>SIMPLE OPERATIONS</h4>
+                <p>Less complexity. More efficiency.</p>
+            </div>
+            <div class="scale-feature animate-on-scroll fade-in-up" style="--delay: 0.3s">
+                <i data-lucide="store"></i>
+                <h4>SMALL SPACE REQUIREMENT</h4>
+                <p>Big business in small spaces</p>
+            </div>
+        </div>
+        <div class="roadmap mt-5 animate-on-scroll fade-in-up">
+            <div class="roadmap-img-placeholder">
+                <img src="assets/kitchen_bg.png" alt="Roadmap Background">
+                <div class="roadmap-overlay">
+                    <div class="road-step"><span>1</span> ONE OUTLET <p>Start Small. Low Investment</p></div>
+                    <div class="road-step"><span>2</span> 10 OUTLETS <p>Build Strong. Consistent Growth</p></div>
+                    <div class="road-step"><span>3</span> 100 OUTLETS <p>Become A Brand. Recognized Everywhere</p></div>
+                    <div class="road-step"><span>4</span> 1000+ OUTLETS <p>Nationwide Presence. Category Leader</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar grid-5 mt-4">
+            <div class="bb-item">
+                <i data-lucide="trending-up"></i>
+                <div><h4>PROVEN MODEL</h4><p>Tested. Optimized. Profitable.</p></div>
+            </div>
+            <div class="bb-item">
+                <i data-lucide="shield-check"></i>
+                <div><h4>LOW RISK</h4><p>Small investment. High returns.</p></div>
+            </div>
+            <div class="bb-item">
+                <i data-lucide="bar-chart-2"></i>
+                <div><h4>HIGH RETURNS</h4><p>Great margins. Quick break-even.</p></div>
+            </div>
+            <div class="bb-item">
+                <i data-lucide="handshake"></i>
+                <div><h4>FULL SUPPORT</h4><p>We build with you. We grow with you.</p></div>
+            </div>
+            <div class="bb-item">
+                <i data-lucide="rocket"></i>
+                <div><h4>FUTURE READY</h4><p>A brand built to lead for years.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Switch: Traditional vs TOM -->
+    <section class="vs-section light-bg mt-5">
+        <div class="container">
+            <div class="vs-header">
+                <h2>THE SMART WAY TO <span class="highlight lg-text">SUCCEED</span></h2>
+                <p>We've removed the stress. Toggle below to see the difference.</p>
+            </div>
+            
+            <div class="toggle-container animate-on-scroll zoom-in text-center">
+                <div class="vs-toggle">
+                    <button id="btnTraditional" class="toggle-btn" onclick="switchVs('traditional')">Traditional Setup</button>
+                    <button id="btnTom" class="toggle-btn active" onclick="switchVs('tom')">The TOM Way</button>
+                </div>
+            </div>
+
+            <div class="vs-cards mt-5 animate-on-scroll fade-in-up">
+                <!-- Traditional View -->
+                <div id="viewTraditional" class="vs-view" style="display: none;">
+                    <div class="grid-4">
+                        <div class="vs-card negative">
+                            <i data-lucide="users"></i>
+                            <h4>High Staffing</h4>
+                            <p>Hard to manage, expensive payrolls, high attrition.</p>
+                        </div>
+                        <div class="vs-card negative">
+                            <i data-lucide="chef-hat"></i>
+                            <h4>Complex Kitchen</h4>
+                            <p>Expensive heavy equipment, lots of maintenance.</p>
+                        </div>
+                        <div class="vs-card negative">
+                            <i data-lucide="clock"></i>
+                            <h4>Slow Service</h4>
+                            <p>Long prep times lead to lower table turnover.</p>
+                        </div>
+                        <div class="vs-card negative">
+                            <i data-lucide="alert-triangle"></i>
+                            <h4>High Risk</h4>
+                            <p>Huge investments with unpredictable returns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOM View -->
+                <div id="viewTom" class="vs-view active-view">
+                    <div class="grid-4">
+                        <div class="vs-card positive">
+                            <i data-lucide="user-check"></i>
+                            <h4>Lean Team</h4>
+                            <p>Runs perfectly with just 1-2 trained staff.</p>
+                        </div>
+                        <div class="vs-card positive">
+                            <i data-lucide="zap"></i>
+                            <h4>Simple Setup</h4>
+                            <p>Minimal equipment, highly efficient workspace.</p>
+                        </div>
+                        <div class="vs-card positive">
+                            <i data-lucide="timer"></i>
+                            <h4>Lightning Fast</h4>
+                            <p>Quick prep equals extremely happy customers.</p>
+                        </div>
+                        <div class="vs-card positive">
+                            <i data-lucide="shield-check"></i>
+                            <h4>Controlled Risk</h4>
+                            <p>Low upfront cost, proven high-margin model.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 text-large">
+                <p>TOM removes the complexity. You get a business that works, a brand that grows, and a team that supports you - every step of the way.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Snapshot -->
+    <section class="investment container mt-5 mb-5">
+        <div class="section-header">
+            <h2>INVESTMENT <span class="highlight">SNAPSHOT</span></h2>
+            <div class="dark-badge">LOW INVESTMENT. HIGH RETURNS. A BUSINESS THAT MAKES SENSE.</div>
+        </div>
+        <div class="snapshot-grid grid-4 mt-4 animate-on-scroll fade-in-up">
+            <div class="snap-box">
+                <i data-lucide="indian-rupee"></i>
+                <h4>REQUIRED INVESTMENT</h4>
+                <h3 class="highlight">₹3 - 7 LAKHS</h3>
+                <p>Affordable investment for high returns.</p>
+            </div>
+            <div class="snap-box">
+                <i data-lucide="store"></i>
+                <h4>STORE SIZE</h4>
+                <h3 class="highlight">100 - 200 SQ FT</h3>
+                <p>Small space. Big opportunity.</p>
+            </div>
+            <div class="snap-box">
+                <i data-lucide="users"></i>
+                <h4>STAFF</h4>
+                <h3 class="highlight">1 - 2 EMPLOYEES</h3>
+                <p>Lean team. Maximum efficiency.</p>
+            </div>
+            <div class="snap-box">
+                <i data-lucide="headset"></i>
+                <h4>SUPPORT</h4>
+                <h3 class="highlight">COMPLETE SOP SYSTEM</h3>
+                <p>End-to-end support at every step.</p>
+            </div>
+        </div>
+        
+        <div class="system-inside mt-5">
+            <h3 class="text-center section-divider"><span>INSIDE THE TOM SYSTEM</span></h3>
+            <p class="text-center mt-2">A PROVEN SYSTEM THAT MAKES ANYONE SUCCESSFUL.</p>
+            <div class="grid-6 mt-4">
+                <div class="sys-box animate-on-scroll fade-in-up"><i data-lucide="settings"></i> <h4>OPERATIONS SOP</h4><p>Step-by-step processes for smooth daily operations.</p></div>
+                <div class="sys-box animate-on-scroll fade-in-up" style="--delay:0.1s"><i data-lucide="chef-hat"></i> <h4>KITCHEN SOP</h4><p>Standardized recipes and preparation methods.</p></div>
+                <div class="sys-box animate-on-scroll fade-in-up" style="--delay:0.2s"><i data-lucide="clipboard-list"></i> <h4>INVENTORY SOP</h4><p>Smart inventory management to reduce waste.</p></div>
+                <div class="sys-box animate-on-scroll fade-in-up" style="--delay:0.3s"><i data-lucide="truck"></i> <h4>PROCUREMENT SOP</h4><p>Centralized purchasing for best quality.</p></div>
+                <div class="sys-box animate-on-scroll fade-in-up" style="--delay:0.4s"><i data-lucide="graduation-cap"></i> <h4>TRAINING SOP</h4><p>Complete training modules for you and your team.</p></div>
+                <div class="sys-box animate-on-scroll fade-in-up" style="--delay:0.5s"><i data-lucide="megaphone"></i> <h4>MARKETING SOP</h4><p>Proven marketing strategies to attract customers.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Form -->
+    <div id="franchiseModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-layout">
+                <div class="modal-left">
+                    <h2>BE A PART OF <br><span class="highlight">INDIA'S NEXT BIG OMELETTE BRAND!</span></h2>
+                    <p>Join a brand that's simple, scalable and seriously profitable.</p>
+                    <img src="assets/modal_bg.png" alt="Delicious Food">
+                </div>
+                <div class="modal-right">
+                    <h3>FRANCHISE APPLICATION FORM</h3>
+                    <p>Fill in your details and our franchise team will get in touch with you.</p>
+                    <form id="franchiseForm">
+                        <div class="input-group">
+                            <i data-lucide="user"></i>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <i data-lucide="phone"></i>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="input-group">
+                            <i data-lucide="mail"></i>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-group">
+                            <i data-lucide="map-pin"></i>
+                            <input type="text" placeholder="City" required>
+                        </div>
+                        <div class="input-group custom-select-group">
+                            <i data-lucide="indian-rupee"></i>
+                            <div class="input-content">
+                                <label>Investment Budget</label>
+                                <select required>
+                                    <option value="" disabled selected>Select Budget</option>
+                                    <option value="10-15">10 - 15 Lakhs</option>
+                                    <option value="15-25">15 - 25 Lakhs</option>
+                                    <option value="25+">25+ Lakhs</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group custom-select-group">
+                            <i data-lucide="briefcase"></i>
+                            <div class="input-content">
+                                <label>Current Occupation</label>
+                                <select required>
+                                    <option value="" disabled selected>Select Occupation</option>
+                                    <option value="business">Business Owner</option>
+                                    <option value="salaried">Salaried Employee</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group textarea-group">
+                            <i data-lucide="message-square" class="top-icon"></i>
+                            <div class="input-content">
+                                <label>Message / Tell us about yourself</label>
+                                <textarea placeholder="Your message..." rows="2"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 submit-btn"><i data-lucide="send"></i> SUBMIT APPLICATION</button>
+                        <p class="secure-text"><i data-lucide="shield-check"></i> 100% Secure. Your information is safe with us. <i data-lucide="lock" style="margin-left:5px; width:14px;"></i></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="The Omelette Man Logo" class="brand-logo">
+                </a>
+                <p class="tagline">Fresh Eggs. Fresh Taste.<br><span class="highlight">Every Time.</span></p>
+            </div>
+            <div class="footer-links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">Franchise Opportunity</a></li>
+                    <li><a href="#">The TOM Experience</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>CONTACT US</h4>
+                <p><i data-lucide="phone"></i> +91 98765 43210</p>
+                <p><i data-lucide="mail"></i> hello@theomeletteman.com</p>
+                <h4 class="mt-4">ADDRESS</h4>
+                <p><i data-lucide="map-pin"></i> Plot No. 123, Food Street, KPHB, Hyderabad, Telangana - 500072, India.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Omelette Man. All Rights Reserved. | Privacy Policy | Terms & Conditions | Franchise Disclaimer</p>
+            <p class="footer-slogan">One Omelette. One Brand. <br><span class="highlight">Endless Possibilities.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

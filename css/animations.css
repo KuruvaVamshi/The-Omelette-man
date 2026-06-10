@@ -1,0 +1,138 @@
+/* Animations and Interactions */
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 184, 0, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(255, 184, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 184, 0, 0);
+    }
+}
+
+/* Scroll Reveal Classes */
+.animate-on-scroll {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.fade-in-up {
+    transform: translateY(40px);
+}
+
+.fade-in-left {
+    transform: translateX(-40px);
+}
+
+.fade-in-right {
+    transform: translateX(40px);
+}
+
+.zoom-in {
+    transform: scale(0.9);
+}
+
+/* When active (in viewport) */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+/* Stagger delays */
+[style*="--delay"] {
+    transition-delay: var(--delay);
+}
+
+/* Button pulse on hero */
+.btn-primary.lg {
+    animation: pulse-glow 2s infinite;
+}
+
+/* Infinite Looping Smoke Effect */
+.smoke-loop-container {
+    position: absolute;
+    bottom: 35%;
+    left: 25%;
+    width: 80%;
+    height: 70%;
+    z-index: 3;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 15%, black 60%, transparent 100%);
+    mask-image: linear-gradient(to top, transparent 0%, black 15%, black 60%, transparent 100%);
+}
+
+.smoke-scroll-fast,
+.smoke-scroll-slow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.smoke-scroll-slow {
+    opacity: 0.7;
+    transform: scaleX(-1);
+}
+
+.smoke-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.smoke-scroll-fast .loop-1 {
+    top: 0;
+    animation: smokeScroll 15s linear infinite;
+}
+
+.smoke-scroll-fast .loop-2 {
+    top: 100%;
+    animation: smokeScroll 15s linear infinite;
+}
+
+.smoke-scroll-slow .loop-1 {
+    top: 0;
+    animation: smokeScroll 25s linear infinite;
+}
+
+.smoke-scroll-slow .loop-2 {
+    top: 100%;
+    animation: smokeScroll 25s linear infinite;
+}
+
+@keyframes smokeScroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@media (max-width: 992px) {
+    .smoke-loop-container {
+        left: 0;
+        width: 100%;
+    }
+}
